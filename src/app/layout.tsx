@@ -7,6 +7,9 @@ const caveat = Caveat({ subsets: ["latin"] });
 export const metadata: Metadata = {
 	title: "MyKittyDresser",
 	description: "Dressing game inspired in Hello Kitty",
+	icons: {
+		icon: "/Logo.svg",
+	},
 };
 
 export default function RootLayout({
