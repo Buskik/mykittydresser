@@ -1,0 +1,70 @@
+{
+	"faces": [
+		{
+			"id": 1,
+			"name": "Smile",
+			"price": 23,
+			"url": "/face.svg"
+		},
+		{
+			"id": 2,
+			"name": "Crying",
+			"price": 23,
+			"url": "/face.svg"
+		},
+		{
+			"id": 4,
+			"name": "Haha",
+			"price": 23,
+			"url": "/face.svg"
+		},
+		{
+			"id": 5,
+			"name": "Haha",
+			"price": 23,
+			"url": "/face.svg"
+		},
+		{
+			"id": 6,
+			"name": "Haha",
+			"price": 23,
+			"url": "/face.svg"
+		},
+		{
+			"id": 7,
+			"name": "Haha",
+			"price": 23,
+			"url": "/face.svg"
+		}
+	],
+	"clothes": [
+		{
+			"id": 1,
+			"name": "Dress",
+			"price": 23,
+			"url": "/cloth.png"
+		},
+		{
+			"id": 2,
+			"name": "Dress",
+			"price": 23,
+			"url": "/cloth.svg"
+		}
+	],
+	"shoes": [
+		{
+			"id": 1,
+			"name": "Shoe",
+			"price": 23,
+			"url": ""
+		}
+	],
+	"hats": [
+		{
+			"id": 1,
+			"name": "Hat",
+			"price": 23,
+			"url": ""
+		}
+	]
+}
