@@ -1,3 +1,3 @@
 # My Kitty Dresser!
 
-<img src="/public/Logo.png" width="5rem" height="5rem" alt="logo" />
+<img style="align: center" src="/public/Logo.png" width="200px" height="200px" alt="logo" />
