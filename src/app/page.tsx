@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Footprints, Glasses, Shirt, Smile, X } from "lucide-react";
+import { Cat, Check, Glasses, Shirt, Smile, X } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { Icon } from "./components/Icon";
@@ -9,18 +9,20 @@ import data from "./items.json";
 const faces = data.faces.map((e) => e);
 const clothes = data.clothes.map((e) => e);
 const acessories = data.acess.map((e) => e);
+const heads = data.heads.map((e) => e);
 
 export default function Home() {
 	const [face, setFace] = useState<number>();
 	const [cloth, setCloth] = useState<number>();
 	const [acess, setAcess] = useState<number>();
+	const [head, setHead] = useState<number>();
 	const [start, setStart] = useState(false);
 	const [leftOpen, setLeft] = useState(false);
 	const [rightOpen, setRight] = useState(false);
 	const [faceOpen, setFaceOpen] = useState(false);
 	const [clothOpen, setClothOpen] = useState(false);
 	const [acessOpen, setAcessOpen] = useState(false);
-	const [shoeOpen, setShoe] = useState(false);
+	const [headOpen, setHeadOpen] = useState(false);
 	return (
 		<>
 			{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
@@ -166,6 +168,20 @@ export default function Home() {
 						{acessories.flatMap((e) =>
 							e.id === Number(acess) ? (
 								<Image
+									className="absolute top-[1.8rem] scale-[2.6] z-10"
+									key={e.id}
+									width={1000}
+									height={1000}
+									src={e.url}
+									alt={e.name}
+								/>
+							) : (
+								false
+							),
+						)}
+						{heads.flatMap((e) =>
+							e.id === Number(head) ? (
+								<Image
 									className="absolute top-[1.8rem] scale-[2.6]"
 									key={e.id}
 									width={1000}
@@ -213,32 +229,37 @@ export default function Home() {
 						))}
 					</div>
 				</div>
-				{/* SHOES MENU */}
+				{/* HEADS MENU */}
 				<div
-					className={`${!shoeOpen && "pointer-events-none opacity-0 min-w-0 w-0"} ${shoeOpen && " min-w-[24rem] w-[24rem]"} flex flex-col relative transition-all duration-500 rounded-md overflow-hidden `}
+					className={`${!headOpen && "pointer-events-none opacity-0 min-w-0 w-0"} ${headOpen && " min-w-[24rem] w-[24rem]"} flex flex-col relative transition-all duration-500 rounded-md overflow-hidden `}
 				>
 					<div className="sticky bg-pink-200 text-pink-950 p-4 w-full  top-0 left-0 right-0 flex justify-between">
-						<h1 className="font-black text-4xl">SAPATOS</h1>
+						<h1 className="font-black text-4xl">CABEÇAS</h1>
 						<X
 							onClick={() => {
 								setRight(false);
 								setLeft(false);
-								setShoe(false);
+								setHeadOpen(false);
 							}}
 							className="place-self-end size-12"
 						/>
 					</div>
 					<div className="grid grid-cols-3 auto-rows-min overflow-hidden flex-wrap overflow-y-scroll min-h-[24rem] px-2 pb-2 bg-pink-200 items-center">
-						{data.faces.map((e) => (
-							<Image
-								onClick={() => setFace(e.id)}
-								className="border-2 border-rose-300 bg-pink-50 fill-rose-950 m-1 rounded-lg"
+						{heads.map((e) => (
+							// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
+							<div
 								key={e.id}
-								width={50}
-								height={50}
-								src={e.url}
-								alt={e.name}
-							/>
+								onClick={() => setHead(e.id)}
+								className="border-2 w-[7rem] h-[7rem] relative border-rose-300 bg-pink-50 fill-rose-950 m-1 rounded-lg"
+							>
+								<Image
+									className="absolute top-20 scale-[2]"
+									width={1000000}
+									height={1000000}
+									src={e.url}
+									alt={e.name}
+								/>
+							</div>
 						))}
 					</div>
 				</div>
@@ -256,18 +277,14 @@ export default function Home() {
 					/>
 					<Icon
 						onClick={() => {
-							setShoe(true);
+							setHeadOpen(true);
 							setLeft(true);
 							setRight(true);
 						}}
 						className="self-center"
-						icon={Footprints}
+						icon={Cat}
 					/>
-					<Icon
-						onClick={() => setFace(2)}
-						icon={Check}
-						className="fill-none stroke-[3px]"
-					/>
+					<Icon icon={Check} className="fill-none stroke-[3px]" />
 				</div>
 				{/* Credits! */}
 			</main>

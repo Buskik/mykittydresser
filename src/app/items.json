@@ -21,12 +21,12 @@
 			"url": "/cloth.svg"
 		}
 	],
-	"shoes": [
+	"heads": [
 		{
 			"id": 1,
-			"name": "Shoe",
+			"name": "Kitty Head",
 			"price": 23,
-			"url": ""
+			"url": "/head.png"
 		}
 	],
 	"acess": [
