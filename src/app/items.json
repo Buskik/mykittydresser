@@ -1,40 +1,10 @@
 {
 	"faces": [
 		{
-			"id": 1,
-			"name": "Smile",
-			"price": 23,
-			"url": "/face.svg"
-		},
-		{
 			"id": 2,
-			"name": "Crying",
+			"name": "Cute",
 			"price": 23,
-			"url": "/face.svg"
-		},
-		{
-			"id": 4,
-			"name": "Haha",
-			"price": 23,
-			"url": "/face.svg"
-		},
-		{
-			"id": 5,
-			"name": "Haha",
-			"price": 23,
-			"url": "/face.svg"
-		},
-		{
-			"id": 6,
-			"name": "Haha",
-			"price": 23,
-			"url": "/face.svg"
-		},
-		{
-			"id": 7,
-			"name": "Haha",
-			"price": 23,
-			"url": "/face.svg"
+			"url": "/face.png"
 		}
 	],
 	"clothes": [
@@ -59,12 +29,12 @@
 			"url": ""
 		}
 	],
-	"hats": [
+	"acess": [
 		{
 			"id": 1,
-			"name": "Hat",
+			"name": "Lace",
 			"price": 23,
-			"url": ""
+			"url": "/acess.png"
 		}
 	]
 }

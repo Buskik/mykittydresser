@@ -9,9 +9,11 @@ export function Icon({ icon: Icon, className, ...props }: IconProps) {
 	return (
 		<div
 			{...props}
-			className={twMerge("p-1 w-fit rounded-full bg-pink-200", className)}
+			className={twMerge("p-2 w-fit rounded-full bg-pink-200", className)}
 		>
-			<Icon className={twMerge("fill-pink-700 stroke-pink-700", className)} />
+			<Icon
+				className={twMerge("fill-pink-700 stroke-pink-700 size-12", className)}
+			/>
 		</div>
 	);
 }
