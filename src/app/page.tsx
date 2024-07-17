@@ -34,7 +34,7 @@ export default function Home() {
 			</div>
 			<main className="flex w-screen h-screen items-center justify-center gap-10 bg-pink-950">
 				<div
-					className={`${leftOpen && "pointer-events-none opacity-0 w-0 min-w-0"} h-72 min-w-48 transition-all duration-500  flex flex-col justify-between items-end`}
+					className={`${leftOpen && "pointer-events-none opacity-0"} h-72 min-w-48 w-0 transition-all duration-500  flex flex-col justify-between items-end`}
 				>
 					<Icon
 						icon={Shirt}
@@ -57,7 +57,7 @@ export default function Home() {
 				</div>
 				{/* FACES MENU */}
 				<div
-					className={`${!faceOpen && "pointer-events-none opacity-0 w-0 min-w-0"} flex flex-col relative w-0 min-w-[24rem] transition-all duration-500	 rounded-md overflow-hidden `}
+					className={`${!faceOpen && "pointer-events-none opacity-0 min-w-0 w-0"} ${faceOpen && " min-w-[24rem] w-[24rem]"}  flex flex-col relative transition-all duration-500	 rounded-md overflow-hidden `}
 				>
 					<div className="sticky bg-pink-200 text-pink-950 p-4 w-full  top-0 left-0 right-0 flex justify-between">
 						<h1 className="font-black text-4xl">ROSTOS</h1>
@@ -91,7 +91,7 @@ export default function Home() {
 				</div>
 				{/* CLOTHES MENU */}
 				<div
-					className={`${!clothOpen && "pointer-events-none opacity-0 w-0 min-w-0"} flex transition-all duration-500 flex-col relative w-0 min-w-[24rem] rounded-md overflow-hidden `}
+					className={`${!clothOpen && "pointer-events-none opacity-0 min-w-0 w-0"} ${clothOpen && " min-w-[24rem] w-[24rem]"}  flex transition-all duration-500 flex-col relative  rounded-md overflow-hidden `}
 				>
 					<div className="sticky bg-pink-200 text-pink-950 p-4 w-full  top-0 left-0 right-0 flex justify-between">
 						<h1 className="font-black text-4xl">ROUPAS</h1>
@@ -125,7 +125,7 @@ export default function Home() {
 				</div>
 
 				{/* MODEL */}
-				<div className="bg-pink-200 rounded-lg font-black text-lg text-pink-950 flex items-center justify-center w-0 min-w-[24rem] min-h-[40rem] ">
+				<div className="bg-pink-200 rounded-lg font-black text-lg text-pink-950 flex items-center justify-center min-w-[24rem] min-h-[40rem] ">
 					<div className="relative flex items-center justify-center border-pink-950 rounded-3xl w-[10rem] h-[20rem]">
 						<Image
 							className=" m-1 scale-[2] relative rounded-lg size-full"
@@ -181,7 +181,7 @@ export default function Home() {
 				</div>
 				{/* ACESSORIES MENU */}
 				<div
-					className={`${!acessOpen && "pointer-events-none opacity-0 w-0 min-w-0"} flex transition-all duration-500 flex-col relative w-0 min-w-[24rem] rounded-md overflow-hidden `}
+					className={`${!acessOpen && "pointer-events-none opacity-0 min-w-0 w-0"} ${acessOpen && " min-w-[24rem] w-[24rem]"} flex transition-all duration-500 flex-col relative rounded-md overflow-hidden `}
 				>
 					<div className="sticky bg-pink-200 text-pink-950 p-4 w-full  top-0 left-0 right-0 flex justify-between">
 						<h1 className="font-black text-4xl">ACESSÓRIOS</h1>
@@ -215,7 +215,7 @@ export default function Home() {
 				</div>
 				{/* SHOES MENU */}
 				<div
-					className={`${!shoeOpen && "pointer-events-none opacity-0 min-w-0"} flex flex-col relative w-0 min-w-[24rem] transition-all duration-500 rounded-md overflow-hidden `}
+					className={`${!shoeOpen && "pointer-events-none opacity-0 min-w-0 w-0"} ${shoeOpen && " min-w-[24rem] w-[24rem]"} flex flex-col relative transition-all duration-500 rounded-md overflow-hidden `}
 				>
 					<div className="sticky bg-pink-200 text-pink-950 p-4 w-full  top-0 left-0 right-0 flex justify-between">
 						<h1 className="font-black text-4xl">SAPATOS</h1>
@@ -244,7 +244,7 @@ export default function Home() {
 				</div>
 				{/* RIGHT BUTTONS */}
 				<div
-					className={`${rightOpen && "pointer-events-none opacity-0 w-0 min-w-0"} transition-all duration-500 min-h-72 min-w-48 flex flex-col justify-between items-start`}
+					className={`${rightOpen && "pointer-events-none opacity-0 w-0"} transition-all duration-500 h-72 w-48 flex flex-col justify-between items-start`}
 				>
 					<Icon
 						onClick={() => {
