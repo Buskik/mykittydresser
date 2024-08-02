@@ -2,39 +2,291 @@
 	"faces": [
 		{
 			"id": 2,
-			"name": "Cute",
+			"name": "2",
 			"price": 23,
-			"url": "/face.png"
+			"url": "/faces/2.png"
+		},
+		{
+			"id": 3,
+			"name": "3",
+			"price": 23,
+			"url": "/faces/3.png"
+		},
+		{
+			"id": 4,
+			"name": "4",
+			"price": 23,
+			"url": "/faces/4.png"
+		},
+		{
+			"id": 5,
+			"name": "5",
+			"price": 23,
+			"url": "/faces/5.png"
+		},
+		{
+			"id": 6,
+			"name": "6",
+			"price": 23,
+			"url": "/faces/6.png"
+		},
+		{
+			"id": 7,
+			"name": "7",
+			"price": 23,
+			"url": "/faces/7.png"
+		},
+		{
+			"id": 8,
+			"name": "8",
+			"price": 23,
+			"url": "/faces/8.png"
+		},
+		{
+			"id": 9,
+			"name": "9",
+			"price": 23,
+			"url": "/faces/9.png"
+		},
+		{
+			"id": 10,
+			"name": "10",
+			"price": 23,
+			"url": "/faces/10.png"
+		},
+		{
+			"id": 11,
+			"name": "11",
+			"price": 23,
+			"url": "/faces/11.png"
+		},
+		{
+			"id": 12,
+			"name": "12",
+			"price": 23,
+			"url": "/faces/12.png"
 		}
 	],
 	"clothes": [
 		{
 			"id": 1,
-			"name": "Dress",
+			"name": "1",
 			"price": 23,
-			"url": "/cloth.png"
+			"url": "/clothes/1.png"
 		},
 		{
 			"id": 2,
-			"name": "Dress",
+			"name": "2",
 			"price": 23,
-			"url": "/cloth2.png"
+			"url": "/clothes/2.png"
+		},
+		{
+			"id": 3,
+			"name": "3",
+			"price": 23,
+			"url": "/clothes/3.png"
+		},
+		{
+			"id": 4,
+			"name": "4",
+			"price": 23,
+			"url": "/clothes/4.png"
+		},
+		{
+			"id": 5,
+			"name": "5",
+			"price": 23,
+			"url": "/clothes/5.png"
+		},
+		{
+			"id": 6,
+			"name": "6",
+			"price": 23,
+			"url": "/clothes/6.png"
+		},
+		{
+			"id": 7,
+			"name": "7",
+			"price": 23,
+			"url": "/clothes/7.png"
+		},
+		{
+			"id": 8,
+			"name": "8",
+			"price": 23,
+			"url": "/clothes/8.png"
+		},
+		{
+			"id": 9,
+			"name": "9",
+			"price": 23,
+			"url": "/clothes/9.png"
+		},
+		{
+			"id": 10,
+			"name": "10",
+			"price": 23,
+			"url": "/clothes/10.png"
+		},
+		{
+			"id": 11,
+			"name": "11",
+			"price": 23,
+			"url": "/clothes/11.png"
+		},
+		{
+			"id": 12,
+			"name": "12",
+			"price": 23,
+			"url": "/clothes/12.png"
+		},
+		{
+			"id": 13,
+			"name": "13",
+			"price": 23,
+			"url": "/clothes/13.png"
+		},
+		{
+			"id": 14,
+			"name": "14",
+			"price": 23,
+			"url": "/clothes/14.png"
 		}
 	],
 	"heads": [
 		{
 			"id": 1,
-			"name": "Kitty Head",
+			"name": "1",
 			"price": 23,
-			"url": "/head.png"
+			"url": "/heads/1.png"
+		},
+		{
+			"id": 2,
+			"name": "2",
+			"price": 23,
+			"url": "/heads/2.png"
+		},
+		{
+			"id": 3,
+			"name": "3",
+			"price": 23,
+			"url": "/heads/3.png"
+		},
+		{
+			"id": 4,
+			"name": "4",
+			"price": 23,
+			"url": "/heads/4.png"
+		},
+		{
+			"id": 5,
+			"name": "5",
+			"price": 23,
+			"url": "/heads/5.png"
+		},
+		{
+			"id": 6,
+			"name": "6",
+			"price": 23,
+			"url": "/heads/6.png"
+		},
+		{
+			"id": 7,
+			"name": "7",
+			"price": 23,
+			"url": "/heads/7.png"
+		},
+		{
+			"id": 8,
+			"name": "8",
+			"price": 23,
+			"url": "/heads/8.png"
+		},
+		{
+			"id": 9,
+			"name": "9",
+			"price": 23,
+			"url": "/heads/9.png"
+		},
+		{
+			"id": 10,
+			"name": "10",
+			"price": 23,
+			"url": "/heads/10.png"
 		}
 	],
 	"acess": [
 		{
 			"id": 1,
-			"name": "Lace",
+			"name": "1",
 			"price": 23,
-			"url": "/acess.png"
+			"url": "/accessories/1.png"
+		},
+		{
+			"id": 2,
+			"name": "2",
+			"price": 23,
+			"url": "/accessories/2.png"
+		},
+		{
+			"id": 3,
+			"name": "3",
+			"price": 23,
+			"url": "/accessories/3.png"
+		},
+		{
+			"id": 4,
+			"name": "4",
+			"price": 23,
+			"url": "/accessories/4.png"
+		},
+		{
+			"id": 5,
+			"name": "5",
+			"price": 23,
+			"url": "/accessories/5.png"
+		},
+		{
+			"id": 6,
+			"name": "6",
+			"price": 23,
+			"url": "/accessories/6.png"
+		},
+		{
+			"id": 7,
+			"name": "7",
+			"price": 23,
+			"url": "/accessories/7.png"
+		},
+		{
+			"id": 8,
+			"name": "8",
+			"price": 23,
+			"url": "/accessories/8.png"
+		},
+		{
+			"id": 9,
+			"name": "9",
+			"price": 23,
+			"url": "/accessories/9.png"
+		},
+		{
+			"id": 10,
+			"name": "10",
+			"price": 23,
+			"url": "/accessories/10.png"
+		},
+		{
+			"id": 11,
+			"name": "11",
+			"price": 23,
+			"url": "/accessories/11.png"
+		},
+		{
+			"id": 12,
+			"name": "12",
+			"price": 23,
+			"url": "/accessories/12.png"
 		}
 	]
 }

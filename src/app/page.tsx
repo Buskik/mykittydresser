@@ -72,7 +72,7 @@ export default function Home() {
 							className="place-self-end size-12"
 						/>
 					</div>
-					<div className="grid grid-cols-3 auto-rows-min overflow-hidden flex-wrap overflow-y-scroll min-h-[24rem] px-2 pb-2 bg-pink-200 items-center">
+					<div className="grid grid-cols-3 auto-rows-min overflow-hidden flex-wrap overflow-y-scroll min-h-[24rem] max-h-[24rem] px-2 pb-2 bg-pink-200 items-center">
 						{faces.map((e) => (
 							// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
 							<div
@@ -106,13 +106,13 @@ export default function Home() {
 							className="place-self-end size-12"
 						/>
 					</div>
-					<div className="grid grid-cols-3 auto-rows-min overflow-hidden flex-wrap overflow-y-scroll min-h-[24rem] px-1 pb-1 bg-pink-200 items-center">
+					<div className="grid grid-cols-3 auto-rows-min overflow-hidden flex-wrap overflow-y-scroll min-h-[24rem] max-h-[24rem] px-1 pb-1 bg-pink-200 items-center">
 						{clothes.map((e) => (
 							// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
 							<div
 								key={e.id}
 								onClick={() => setCloth(e.id)}
-								className="border-2 w-[7rem] h-[10rem] relative border-rose-300 bg-pink-50 fill-rose-950 m-1 rounded-lg"
+								className="border-2 w-[7rem] h-[10rem] relative  border-rose-300 bg-pink-50 fill-rose-950 m-1 rounded-lg"
 							>
 								<Image
 									className="absolute top-[-1.5rem] scale-[1.5]"
@@ -154,7 +154,7 @@ export default function Home() {
 						{clothes.flatMap((e) =>
 							e.id === Number(cloth) ? (
 								<Image
-									className="absolute top-[1.8rem] scale-[2.6]"
+									className="absolute top-[1.8rem] z-10 scale-[2.6]"
 									key={e.id}
 									width={1000}
 									height={1000}
@@ -210,7 +210,7 @@ export default function Home() {
 							className="place-self-end size-12"
 						/>
 					</div>
-					<div className="grid grid-cols-3 auto-rows-min overflow-hidden flex-wrap overflow-y-scroll min-h-[24rem] px-2 pb-2 bg-pink-200 items-center">
+					<div className="grid grid-cols-3 auto-rows-min overflow-hidden flex-wrap overflow-y-scroll min-h-[24rem] max-h-[24rem] px-2 pb-2 bg-pink-200 items-center">
 						{acessories.map((e) => (
 							// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
 							<div
@@ -244,7 +244,7 @@ export default function Home() {
 							className="place-self-end size-12"
 						/>
 					</div>
-					<div className="grid grid-cols-3 auto-rows-min overflow-hidden flex-wrap overflow-y-scroll min-h-[24rem] px-2 pb-2 bg-pink-200 items-center">
+					<div className="grid grid-cols-3 auto-rows-min overflow-hidden flex-wrap overflow-y-scroll min-h-[24rem] max-h-[24rem] px-2 pb-2 bg-pink-200 items-center">
 						{heads.map((e) => (
 							// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
 							<div
